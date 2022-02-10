@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block title %}
+    TimeParser
+{% endblock %}
+
+{% block body_txt %}
+<h2><u>TimeParser</u></h2>
+<p>Please Select a TimeLogFile to check total spend time.</p>
+
+<form action="output" method='POST' enctype="multipart/form-data" style="margin:auto;width:auto" target="_self">
+    <div class="d-flex justify-content-center mt-5">
+                  <input class="w3-dark-grey" type="file" id="chosen_file" name="chosen_file" required>
+    </div><br>
+
+    <button type="submit">Run</button>
+    <br>
+  </form>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <p class="w3-center" id="about">Powered by <a class="w3-hover-text-green">| Rikul Joshi</a></p>
+  <p class="w3-center" id="about">CSU ID <a class="w3-hover-text-green">| 2812108</a></p>
+{% endblock %}

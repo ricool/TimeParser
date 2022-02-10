@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block title %}
+    TimeParser
+{% endblock %}
+
+{% block body_txt %}
+<h2><u>Output</u></h2>
+<br>
+<form style="margin:auto;width:40%" action="#" target="_blank">
+    <div>
+        <label>File Name: <b>{% print(file_name) %}</b></label><br>
+        <h3>Total time:
+                {% print ("%d Hours %02d Min" % (Hours, Minutes)) %}
+        </h3>
+    </div>
+    <br>
+    <a href="{{ url_for('home_page')}}" class="w3-button w3-block w3-dark-grey" name="run">Reset</a>
+    <br>
+    </form>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <p class="w3-center" id="about">Powered by <a class="w3-hover-text-green">| Rikul Joshi</a></p>
+  <p class="w3-center" id="about">CSU ID <a class="w3-hover-text-green">| 2812108</a></p>
+{% endblock %}
